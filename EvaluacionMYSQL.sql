@@ -84,6 +84,10 @@ INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUE
 INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Chocolito",850,3,3);
 INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Tuareg",570,4,4);
 INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Frac",630,4,4);
+INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Mono Rolls",5580,2,4);
+INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Mono Choc",4590,2,4);
+INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Danky",1799,3,2);
+INSERT INTO Producto (nombre_producto,precio,tipoProducto_id,proveedor_id) VALUES ("Crocanty",850,3,2);
 
 INSERT INTO Venta (fecha_venta,monto,producto_id) VALUES ("2023-01-05",1990,2);
 INSERT INTO Venta (fecha_venta,monto,producto_id) VALUES ("2023-01-07",850,6);
@@ -108,6 +112,10 @@ INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (5,3);
 INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (6,3);
 INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (7,4);
 INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (8,4);
+INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (9,4);
+INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (10,4);
+INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (11,2);
+INSERT INTO ProductoProveedor (producto_id,proveedor_id) VALUES (12,2);
 
 SELECT Venta.fecha_venta, Venta.monto, Producto.nombre_producto
 FROM Venta JOIN Producto ON Venta.producto_id = Producto.producto_id;
